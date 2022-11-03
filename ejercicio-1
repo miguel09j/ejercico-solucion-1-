@@ -1,0 +1,9 @@
+def radio_de_un_circulo(r):
+	A = math.pi * r ** 2
+	P = 2 * math.pi * r
+	return A,P
+
+r = float(input("Introduce el radio:"))
+A,P = radio_de_un_circulo(r)
+print("el area es igual a: ",A)
+print("el perimetro es igual a: ",P)
