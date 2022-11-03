@@ -1,1 +1,0 @@
-# ejercico-solucion-1
