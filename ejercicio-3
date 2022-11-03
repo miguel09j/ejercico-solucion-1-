@@ -1,0 +1,7 @@
+C = str(input('digite su contraseña: '))
+def c_segura(c):
+    if 10 < len(c):
+        return 'Contraseña segura'
+    elif 10 >= len(c):
+        return 'contraseña no segura'
+print(c_segura(C))
