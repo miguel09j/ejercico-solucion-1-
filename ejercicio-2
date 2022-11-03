@@ -1,0 +1,21 @@
+
+def div(my,mn):
+	if my<mn:
+		return mn,my
+	else:
+		return my,mn
+
+def calcular_macxiomo_como_un_divisor(N1,N2):
+	
+	N1, N2 = div(N1,N2)
+	rest = N1 % N2
+	if rest == 0: 
+		return N2
+	else:
+		return calcular_macxiomo_como_un_divisor(N2,rest)
+  
+  
+n1 = int(input("El Número 1 es: "))
+n2 = int(input("El Número 2 es: "))
+
+print("el maximo como un divisor es igual a: ",calcular_macxiomo_como_un_divisor(n1,n2) )
